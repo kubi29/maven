@@ -1,5 +1,6 @@
 package dev;
 
+import java.util.ResourceBundle;
 import com.github.lalyos.jfiglet.FigletFont;
 
 /**
@@ -11,6 +12,7 @@ public class App
 {
     public static void main( String[] args )
     {
+    	String titre = ResourceBundle.getBundle("application").getString("titre");
     	String asciiArt = FigletFont.convertOneLine( "Hello World!");
         System.out.println( asciiArt );
     }
